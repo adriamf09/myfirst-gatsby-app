@@ -1,0 +1,36 @@
+$break-min: 320px;
+$break-small: 480px;
+$break-large: 768px;
+
+h1{
+    font-size: 25px !important;
+}
+
+.img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    @media screen and (max-width: $break-large){
+        display: block;
+        margin-top: 15px;
+    }
+    @media screen and (max-width: $break-small){
+        display: block;
+        margin-left: 0;
+    }
+}
+p{
+    margin-top: 40px;
+    @media screen and (max-width: $break-large){
+        display: inline-block !important;
+        margin-top: 5px;
+        padding-right: 10px;
+        font-size: 17px;
+    }
+    @media screen and (max-width: $break-small){
+        display: inline-block !important;
+        margin-top: 5px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}

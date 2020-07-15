@@ -1,0 +1,92 @@
+$break-min: 320px;
+$break-small: 480px;
+$break-large: 768px;
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.articleheader{
+    width:100%;
+    text-align:center;
+}
+
+.headerImg{
+    display:inline-block;
+    margin: 0 auto;
+    background-color: white !important;
+}
+
+.title{
+    font-size: 25px !important;
+    @media screen and (max-width: $break-small){
+        font-size: 20px !important;
+    }
+}
+
+h3{
+    font-size: 27px !important;
+    color: #0f4c75;
+    @media screen and (max-width: $break-small){
+        font-size: 23px !important;
+    }
+}
+
+h5{
+    font-size: 20px !important;
+    @media screen and (max-width: $break-small){
+        font-size: 17px !important;
+    }
+}
+
+.section{
+    display: inline-table;
+    margin-bottom: 20px;
+    @media screen and (max-width: $break-large){
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @media screen and (max-width: $break-small){
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+.sectionImg{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    @media screen and (max-width: $break-large){
+        display: block;
+        margin-left: 20px;
+    }
+    @media screen and (max-width: $break-small){
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.sectionDescription{
+    margin-top: 50px;
+    @media screen and (max-width: $break-large){
+        display: inline-block !important;
+        margin-top: 20px;
+        padding-right: 10px;
+        font-size: 17px;
+    }
+    @media screen and (max-width: $break-small){
+        display: inline-block !important;
+        margin-top: 20px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
